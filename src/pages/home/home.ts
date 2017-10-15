@@ -11,7 +11,8 @@ export class HomePage {
   weather: any;
   location: {
     city: string,
-    state: string
+    state: string,
+    temperature: string
   }
 
   constructor(
@@ -24,7 +25,7 @@ export class HomePage {
 
   ionViewWillEnter(){
     this.storage.get('location').then(val => {
-      this.location = (val != null) ? JSON.parse(val) : { city: 'Nashville', state: 'TN' };
+      this.location = (val != null) ? JSON.parse(val) : { city: 'Nashville', state: 'TN', temperature: 'c' };
 
       this.weatherProvider.getWeather(this.location.city, this.location.state)
       .subscribe(weather => {
