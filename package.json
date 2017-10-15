@@ -1,8 +1,8 @@
 {
   "name": "WeatherForecast",
-  "version": "0.0.1",
-  "author": "Ionic Framework",
-  "homepage": "http://ionicframework.com/",
+  "version": "1.0.0",
+  "author": "Iliya Mohamad Lokman",
+  "homepage": "https://github.com/iliyaML",
   "private": true,
   "scripts": {
     "clean": "ionic-app-scripts clean",
